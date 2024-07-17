@@ -5,6 +5,7 @@ import { createContext } from 'react';
 export const UserContext = createContext('light');
 function Context({children} : {children : React.ReactNode}) {
     const [user, setUser] = useState({
+        id : "",
         name : "",
         email : "",
         isLoggedIn : false,
